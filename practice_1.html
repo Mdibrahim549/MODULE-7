@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+        // Hello here's the start
+        /*
+        document.write("Hello world")
+        
+        var x = 10;
+        var y = 20;
+        var sum = x+y;
+        document.write(sum)
+        console.log(sum)*/
+        var age = 18;
+        /*var city = "Dhaka";
+        if (age >= 18 && city == "Dhaka") {
+            document.write("You are eligible to vote")
+        } else {
+            document.write("You are not eligible to vote")
+        } while(a < 5);
+        var age = 18;
+        switch(true) {
+            case (age >= 18):
+                document.write("You are 18 years old")
+                break;
+            case (age >= 20):
+                document.write("You are 20 years old")
+                break;
+            case (age >= 25):
+                document.write("You are 25 years old")
+                break;
+            default:
+                document.write("You are not eligible")
+        }*/
+       var i=0;
+       /*for (i = 0; i <= 10; i++) {
+        if (i==5 || i ==7) {
+            continue;
+        }
+           document.write(i + "<button>submit</button><br>");
+       }
+
+       while (i< 5){
+        document.write(i+"<button>submit</button> <br>");
+        i++;
+       }
+      do{
+        document.write(i+"<button>submit</button> <br>");
+        i++;
+      }
+      while(i<5)
+
+      function addTwoNumbers(x,y){
+            /*var x = 20;
+            var y = 30;
+            var sum = x+y;
+            document.write(sum + "<br>");
+      }
+      addTwoNumbers(10,20);
+      addTwoNumbers(100,20);
+      addTwoNumbers(10,200);*/
+
+      // FOR LOOP
+
+      /* 
+      for(let a = 0; a< 5; a++){
+        if (a==3) {
+            continue;
+        }
+        document.write(a+ "<button>submit</button></br>");
+      }*/
+
+      // WHILE LOOP
+     var a = 0;
+     while(a<5){
+        document.write(a+ "<button>submit</button></br>");
+        a++;
+     }
+
+     //write my name function
+     function writeMyName(name){
+        document.write(name + "<br>");
+     }
+        writeMyName("Ibrahim");
+        writeMyName("Torun");
+        writeMyName("Meherunnessa");
+        writeMyName("Jack");
+
+        // Find the age of son and father
+        let totalAge = 65;
+            let ageDifference = 25;
+            let sonAge = (totalAge - ageDifference) / 2;
+            let fatherAge = sonAge + ageDifference;
+            document.write("Father's age: " + fatherAge + "<br>");
+            document.write("Father's age: " + sonAge + "<br>");
+
+
+            // Write your code here
+                function MyFirstFunction(){
+                    document.write("Hello Captian" + "<br>");
+                }
+                MyFirstFunction();
+
+                // Write your code here
+                    function sumAllNumbers(...numbers){
+                        return numbers.reduce((sum , num) => sum + num , 0);
+                    }
+                    const result1 = sumAllNumbers(1,2,3,4);
+                    document.write(result1 + '<br>');
+                    const resultWithSingleValue = sumAllNumbers(5);
+                    document.write(resultWithSingleValue + '<br>');
+                    const resultWithNoValue = sumAllNumbers();
+                    document.write(resultWithNoValue + '<br>');
+
+
+                    // findmax 
+                    function findmax(numbers){
+                        return Math.max(...numbers);
+                        
+                    }
+
+                    const result2 = findmax([1,2,3,4,5,6]);
+                    document.write(result2 + '<br>');
+                    const resultWithNegativeNumbers = findmax([-1,-2,-3,-4,-5]);
+                    document.write(resultWithNegativeNumbers + '<br> <br>');
+
+
+                    // Write your code here
+                    function createCounter (){
+                        let count = 0;
+                        return {
+                            increment (){
+                                return count++;
+                            },
+                            
+                            getValue (){
+                                return count;
+                            }
+                    
+                        }
+                    }
+
+                    const counter = createCounter();
+                    counter.increment();
+                    counter.increment();
+                    document.write(counter.getValue()+ '<br>');
+
+
+                // Anonymus function
+                function sumTwoNumbers(num1 , num2){
+                    const add = function(a,b){
+                        return a+b;
+                    };
+                    return add(num1 , num2);
+                }
+
+                const result = sumTwoNumbers(3,5);
+                document.write(result + '<br>');
+
+
+                // for loop to add numbers upto n
+
+                function sumUptoN(n){
+                    let sum =0;
+                    for(let i = 0; i<=n; i++)
+                        {
+                            sum += i;  
+                            
+                        } 
+                        return sum;            
+                }
+
+                const result3 = sumUptoN(5);
+                document.write(result3 + '<br>');
+
+
+                //Factorial of a number
+                function factorial(n) {
+                    // Write Your Code
+                    let result = 1;
+                    let i = 1;
+                    while(i<= n){
+                        result *= i;
+                        i++;
+                    }
+                    return result;
+                }
+                const factResult = factorial(5);
+                console.log(factResult);
+/*
+                // print 1 to n numbers using do while loop
+
+                function print1toN(n){
+                    let i = 1;
+                    do{
+                        document.write(i + '<br>');
+                        i++;
+                    }
+                    while(i<=n);
+                }
+
+                print1toN(5);
+
+                //সমসাঃ
+                //for-in লুপ ববহার কের অবেজের সব কী এবং মান ি কেরা।
+
+                function printObjectProperties(obj) {
+                // Write Your Code
+                for(let key in obj ){
+                    if(obj.hasOwnProperty(key)){
+                        console.log(`${key} : ${obj[key]}`);
+                        }
+                    }
+                }
+
+                const obj = {
+                            name: "Jhon" ,
+                            age : 30, 
+                            city: "NewYork"
+                            };
+
+
+                printObjectProperties(obj);
+
+
+                // print the sum of arry 
+
+                function sumArry(arr){
+                    let sum = 0;
+                    for(let value of arr){
+                        sum += value;
+                    }
+                    return sum;
+                }
+
+                const arr = [1,2,3,4,5];
+                const result4 = sumArry(arr);
+
+                //print string array
+
+                function printArrayElements(arr) {
+                    // Write Your Code
+                    for(let value of arr){
+                        console.log(value);
+                    }
+                }
+
+                const myArray = ["Apple", "banana", "cherry"];
+                printArrayElements(myArray);
+
+
+            // print string arry in differnt way
+
+            function arrString(arr) {
+                let a = "";
+                for(let i of arr){
+                    a += i + " ";
+                }
+                return a;
+            }
+
+            const arr = ["apple", "banana", "cherry"];
+            console.log(arrString(arr));
+
+            // Find Fisrt even number in an array
+
+            function findFristevenNumber(arr){
+            for(let i = 0; i <= arr.length;i++){
+                    if(arr[i] %2 === 0){
+                        return arr[i];
+                    }
+                }
+                return 'No even number found';
+            }
+            const arr = [1,3,5,7,9,2,4,6,8,10];
+            console.log(findFristevenNumber(arr));
+
+            function findThreeGunitok(n){
+    for(let i = 0; i<=n ; i++){
+        if(i % 3 === 0){
+            continue;
+        }
+        console.log(i);
+    }
+}
+
+findThreeGunitok(10);
+
+
+// Find the sum off array using reduce method es6
+
+function sumArray(array) {
+    const sum = array.reduce((acc, val)=> acc + val , 0);
+    return sum;
+    
+}
+
+
+const array = [1,2,3,4,5];
+console.log(sumArray(array));   
+
+// find the sum of array using reduce method 
+
+function sumArray(ar){
+    let sum = arr.reduce(function(acc,val){
+        return sum = acc + val;
+    }
+,0);
+}
+
+const ar = [1,2,3,4,5];
+console.log(sumArray(ar));
+
+*/
+
+        function removeFirstElement(array) {
+        
+        // Write your code here 
+        let arr = array.slice(1);
+        return arr;
+    }
+
+    let arr = [1,2,3,4,5];
+    console.log(removeFirstElement(arr));
+    </script>
+    <html>
+        <head>
+            <title>Md Ibrahim</title>
+        </head>
+        <body>
+             
+        </body>
+    </html>
+    <button onclick=" this.innerHTML = Data()">Click me</button>
+    <button onclick= "displayDate()">Click me</button>
+</body>
+</html>
